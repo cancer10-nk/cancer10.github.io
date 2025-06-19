@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Lentera Taubat - Portal Berita Korupsi Indonesia" />
+    <meta name="author" content="Kelompok 6" />
+    <title>Lentera Taubat - Data Korupsi Indonesia</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="aset/logo.png" />
+    <link href="css/styles1.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="scrollToTop()">
+                <link href="logo.png">Lentera Taubat
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" onclick="scrollToTop()">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showAbout()">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" onclick="showLogin()">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page content-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Post content-->
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1 text-primary">Data Korupsi Indonesia</h1>
+                        <!-- Post meta content-->
+                        <div class="text-muted fst-italic mb-2">
+                            📅 Posted on June 18, 2025 by <strong>Kelompok 6</strong>
+                        </div>
+                    </header>
+
+                    <!-- Preview image figure-->
+                    <figure class="mb-4">
+                        <img class="img-fluid rounded border border-secondary" src="aset/korup.jpg"
+                            alt="Ilustrasi Korupsi Indonesia">
+                    </figure>
+
+                    <!-- Post content-->
+                    <section class="mb-5">
+                        <p class="fs-5 mb-4">
+                            Istilah <strong>'Klasemen Liga Korupsi Indonesia'</strong> belakangan ini ramai di media
+                            sosial, terutama pada platform Twitter dan Instagram. Istilah ini muncul setelah terkuaknya
+                            kasus korupsi yang melibatkan beberapa pejabat PT Pertamina Patra Niaga.
+                        </p>
+                        <p class="fs-5 mb-4">
+                            Klasemen sendiri biasanya digunakan dalam dunia sepakbola sebagai catatan
+                            peringkat klub dalam suatu liga atau kompetisi. <em>Klasemen Liga Korupsi Indonesia</em>
+                            berisi peringkat kasus korupsi yang pernah terjadi di Indonesia dengan
+                            nilai kerugian yang besar.
+                        </p>
+                        <p class="fs-5 mb-4">
+                            Melansir kompas.com, terdapat sedikitnya <strong>11 kasus megakorupsi</strong> di Indonesia
+                            yang berpotensi masuk dalam Liga Korupsi Indonesia. Peringkat ini disusun
+                            berdasarkan besarnya kerugian negara yang diakibatkan oleh tindakan korupsi
+                            dalam kasus-kasus tersebut.
+                        </p>
+
+                        <div class="alert alert-info">
+                            <h5>💡 Tahukah Anda?</h5>
+                            <p class="mb-0">Total kerugian negara dari kasus-kasus korupsi besar di Indonesia mencapai
+                                triliunan rupiah, yang seharusnya bisa digunakan untuk pembangunan infrastruktur dan
+                                kesejahteraan rakyat.</p>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- Comments section-->
+                <section class="mb-5">
+                    <div class="comment-section">
+                        <h4 class="mb-4">💬 Komentar</h4>
+
+                        <!-- Comment form-->
+                        <form class="mb-4 comment-form" onsubmit="addComment(event)">
+                            <div class="mb-3">
+                                <label for="commentText" class="form-label">Tulis komentar Anda:</label>
+                                <textarea class="form-control" id="commentText" rows="3"
+                                    placeholder="Bagikan pendapat Anda tentang kasus korupsi di Indonesia..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">📝 Kirim Komentar</button>
+                        </form>
+
+                        <!-- Existing comments-->
+                        <div id="commentsContainer">
+                            <!-- Comment with nested comments-->
+                            <div class="d-flex mb-4">
+                                <div class="flex-shrink-0">
+                                    <div class="comment-avatar">NG</div>
+                                </div>
+                                <div class="ms-3 flex-grow-1">
+                                    <div class="fw-bold text-primary">Nawasena Gustin</div>
+                                    <div class="text-muted small">2 jam yang lalu</div>
+                                    <p class="mt-2">Semoga koruptor cepat dihukum dengan tegas sesuai hukum yang
+                                        berlaku.</p>
+
+                                    <!-- Child comment 1-->
+                                    <div class="d-flex mt-3 ms-3">
+                                        <div class="flex-shrink-0">
+                                            <div class="comment-avatar"
+                                                style="width: 40px; height: 40px; font-size: 0.8rem;">AI</div>
+                                        </div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold text-primary">Adi Imut Banget</div>
+                                            <div class="text-muted small">1 jam yang lalu</div>
+                                            <p class="mt-1">Setuju! Sistem hukum harus diperkuat untuk memberantas
+                                                korupsi.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Child comment 2-->
+                                    <div class="d-flex mt-3 ms-3">
+                                        <div class="flex-shrink-0">
+                                            <div class="comment-avatar"
+                                                style="width: 40px; height: 40px; font-size: 0.8rem;">JS</div>
+                                        </div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold text-primary">Juna Starboy</div>
+                                            <div class="text-muted small">30 menit yang lalu</div>
+                                            <p class="mt-1">Korupsi sudah menjadi masalah sistemik yang memerlukan
+                                                solusi komprehensif.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single comment-->
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <div class="comment-avatar">ZP</div>
+                                </div>
+                                <div class="ms-3">
+                                    <div class="fw-bold text-primary">Zidan Pembela Keadilan</div>
+                                    <div class="text-muted small">4 jam yang lalu</div>
+                                    <p class="mt-2">Mari kita dukung KPK dan lembaga anti-korupsi lainnya dalam
+                                        memberantas korupsi. 🙏</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        🔍 Pencarian
+                    </div>
+                    <div class="card-body search-widget">
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="searchInput"
+                                placeholder="Cari berita korupsi..." aria-label="Cari berita" />
+                            <button class="btn btn-primary" type="button" onclick="performSearch()">
+                                Cari
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News widget-->
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        📰 Berita Korupsi
+                    </div>
+                    <div class="card-body">
+                        <ul class="news-list">
+                            <li><a href="page pertamina.html" onclick="loadNews('pertamina')">🏢 Korupsi Pertamina</a>
+                            </li>
+                            <li><a href="Timah.html" onclick="loadNews('timah')">⛏️ Korupsi PT Timah</a></li>
+                            <li><a href="BTS.html" onclick="loadNews('bts')">📡 Korupsi Proyek BTS 4G</a></li>
+                            <li><a href="Duta.html" onclick="loadNews('duta')">🌴 Korupsi PT Duta Palma Group</a></li>
+                            <li><a href="Garuda Indonesia.html" onclick="loadNews('garuda')">✈️ Korupsi Garuda
+                                    Indonesia</a></li>
+                            <li><a href="PT TPPI.html" onclick="loadNews('tppi')">🏭 Korupsi PT TPPI</a></li>
+                            <li><a href="Bank Century.html" onclick="loadNews('century')">🏦 Korupsi Bank Century</a>
+                            </li>
+                            <li><a href="BLBI.html" onclick="loadNews('blbi')">💰 Korupsi BLBI</a></li>
+                            <li><a href="MUSIM MAS.html" onclick="loadNews('musimmas')">🌾 Korupsi Musim Mas Group</a>
+                            </li>
+                            <li><a href="Pt Jiwa syara.html" onclick="loadNews('jiwasraya')">🛡️ Korupsi PT
+                                    Jiwasraya</a></li>
+                            <li><a href="Asabri.html" onclick="loadNews('asabri')">🎖️ Korupsi Asabri</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Statistics widget -->
+                <div class="card mb-4">
+                    <div class="card-header bg-warning text-dark">📰Berita Hangat</div>
+                    <a
+                        href="https://solobalapan.jawapos.com/sport/2306147798/hot-news-setelah-thom-haye-dan-jordi-amat-ragnar-oratmangoen-dikabarkan-menuju-liga-1-benarkah">
+                        <img class="img-thumbnail mt-3" src="aset/Ragnar.jpeg"
+                            alt="Apakah Ragnar Oratmangoen Menuju Liga Indonesia?">
+                    </a>
+                    <div class="mt-3">
+                        <h6>Apakah Ragnar Oratmangoen Menuju Liga Indonesia?</h6>
+                        <a
+                            href="https://nasional.kompas.com/read/2025/06/19/12280151/wni-di-iran-bakal-dievakuasi-lewat-jalur-darat?source=headline">
+                            <img class="img-thumbnail mt-3" src="aset/iran.jpeg"
+                                alt="WNI di Iran Akan Dievakuasi Lewat Jalur Darat">
+                        </a>
+                        <div class="mt-3">
+                            <h6>WNI di Iran Akan Dievakuasi Lewat Jalur Darat</h6>
+                        </div>
+                        <a
+                            href="https://www.kompas.com/tren/read/2025/06/18/064500165/klasemen-liga-korupsi-indonesia-per-juni-2025-terbaru-kasus-wilmar-rp-118?page=all#google_vignette">
+                            <img class="img-thumbnail mt-3" src="aset/1t.jpeg"
+                                alt="Kasus Terbaru, Kasus Wilmar">
+                        </a>
+                        <div class="mt-3">
+                            <h6>Kasus Terbaru, Kasus Wilmar</h6>
+                        </div>
+                        <a
+                            href="https://www.antaranews.com/berita/4909093/kejati-jateng-tahan-mantan-pj-bupati-cilacap">
+                            <img class="img-thumbnail mt-3" src="aset/pj.jpeg"
+                                alt="Jateng Tahan Mantan PJ Bupati Cilacap">
+                        </a>
+                        <div class="mt-3">
+                            <h6>Jateng Tahan Mantan PJ Bupati Cilacap</h6>
+                        </div>
+
+
+
+                        <!-- Footer -->
+                        <footer class="py-4 bg-dark text-white text-center">
+                            <div class="container">
+                                <p class="m-0">Hak Cipta &copy; 2025 Kelompok 6 - Liga Korupsi Indonesia</p>
+                            </div>
+                        </footer>
+
+                        <!-- Bootstrap core JS-->
+                        <script
+                            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+                        <script src="js/scripts1.js"></script>
+
+
+</body>
+
+</html>
